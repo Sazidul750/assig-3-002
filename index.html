@@ -5,17 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>assgn-3-002</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!--font  link -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--font  link -->
     <link
       href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
+    <!--font  link -->
+    <script
+      src="https://kit.fontawesome.com/ef769d7782.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--fontawesome link -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
+    <!--daisyui  link -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!--tailwindcss  link -->
 
     <style>
       .sora-font {
@@ -25,8 +35,148 @@
         font-style: normal;
       }
     </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              accent: "#179800",
+              secoundry: "#EFEBE3",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body class="sora-font">
-   
+    <!-- header part start -->
+    <header class="mx-auto md:px-36 bg-gradient-to-t from-[#EFEBE3] to-white">
+      <!-- nav start -->
+      <nav>
+        <div class="navbar flex bg-base-100 mt-6">
+          <div class="flex-1 justify-between">
+            <img src="./images/logo-header.png" alt="" />
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-9 w-9"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-40 p-2 shadow items-center -ml-40 font-normal text-xl"
+              >
+                <li><a>Product</a></li>
+                <li><a>Services</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mr-24 hidden md:visible lg:flex">
+            <ul class="menu menu-horizontal px-1 font-normal text-xl">
+              <li><a>Product</a></li>
+              <li><a>Services</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+
+          <div class="space-x-5 hidden md:visible lg:flex">
+            <i class="fa-solid fa-magnifying-glass text-xl"></i>
+            <i class="fa-solid fa-cart-shopping pr-4 text-xl"></i>
+            <a
+              class="btn btn-outline border bottom-1 border-accent font-normal text-xl"
+              >Login</a
+            >
+            <a class="btn bg-accent text-white font-normal text-xl">Register</a>
+          </div>
+        </div>
+      </nav>
+      <!-- banner start -->
+
+      <section>
+        <div class="lg:px-[285px] px-1 pt-16 lg:pt-20">
+          <div class="lg:w-[#827] text-center space-y-8 mb-10">
+            <h1 class="font-semibold text-5xl">
+              Freshness <span class="text-accent"> You Can </span><br />
+              <span class="text-accent">Count</span> On, Prices You’ll Love!
+            </h1>
+            <p class="text-xl">
+              Shop your daily essentials at unbeatable prices. From fresh
+              produce to pantry staples, we’ve got you covered every day!
+            </p>
+          </div>
+          <div>
+            <img src="./images/hero-vegetables.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- header part end -->
+    <!-- main part start -->
+    <main>
+      <!-- service section start -->
+      <section class="p-5 md:p-16 lg:p-36">
+        <div>
+          <h1 class="text-accent font-semibold text-4xl">Services</h1>
+        </div>
+        <div class="flex justify-between flex-col md:flex-row md:gap-6">
+          <div class="card bg-secoundry w-96 shadow-xl mt-12">
+            <figure class="px-10 pt-10">
+              <img
+                src="./images/service.png"
+                alt="Shoes"
+                class="rounded-full p-6 bg-white"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">24/7 Services </h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            </div>
+          </div>
+          <div class="card bg-secoundry w-96 shadow-xl mt-12">
+            <figure class="px-10 pt-10">
+              <img
+                src="./images/delivery.png"
+                alt="Shoes"
+                class="rounded-full p-6 bg-white"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Fast Delivery</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            </div>
+          </div>
+          <div class="card bg-secoundry w-96 shadow-xl mt-12">
+            <figure class="px-10 pt-10">
+              <img
+                src="./images/healthy.png"
+                alt="Shoes"
+                class="rounded-full p-6 bg-white"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Healthy Products </h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- main part end -->
+    <!-- footer part start -->
+    <footer></footer>
+    <!-- footer part end -->
   </body>
 </html>
